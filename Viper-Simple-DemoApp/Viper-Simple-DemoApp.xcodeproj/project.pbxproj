@@ -3,17 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0169018F1D8FF060B5ECF99A /* Pods_Viper_Simple_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004B2214EA7974E817E4E720 /* Pods_Viper_Simple_DemoApp.framework */; };
 		3E49EFAE260C7C27002C80BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFAD260C7C27002C80BF /* AppDelegate.swift */; };
 		3E49EFB0260C7C27002C80BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFAF260C7C27002C80BF /* SceneDelegate.swift */; };
-		3E49EFB2260C7C27002C80BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFB1260C7C27002C80BF /* ViewController.swift */; };
-		3E49EFB5260C7C27002C80BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E49EFB3260C7C27002C80BF /* Main.storyboard */; };
 		3E49EFB7260C7C30002C80BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E49EFB6260C7C30002C80BF /* Assets.xcassets */; };
 		3E49EFBA260C7C30002C80BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E49EFB8260C7C30002C80BF /* LaunchScreen.storyboard */; };
+		3E49EFD1260CA8B5002C80BF /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFD0260CA8B5002C80BF /* Quotes.swift */; };
+		3E49EFD6260CADEC002C80BF /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFD5260CADEC002C80BF /* Quote.swift */; };
+		3E49EFDC260CAFF6002C80BF /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFDB260CAFF6002C80BF /* EndPoints.swift */; };
+		3E49EFE0260CB04A002C80BF /* APIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFDF260CB04A002C80BF /* APIManger.swift */; };
+		3E49EFE4260CB0C8002C80BF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFE3260CB0C8002C80BF /* APIClient.swift */; };
+		3E49EFED260CB587002C80BF /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFEC260CB587002C80BF /* QuoteService.swift */; };
+		3E49EFF0260CDD29002C80BF /* ImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFEF260CDD29002C80BF /* ImageDataService.swift */; };
+		3E49EFF3260CDDFD002C80BF /* KingFisherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFF2260CDDFD002C80BF /* KingFisherService.swift */; };
+		3E49EFF6260CDFE0002C80BF /* QuotesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFF5260CDFE0002C80BF /* QuotesPresenter.swift */; };
+		3E49EFF9260CE30A002C80BF /* QuotesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFF8260CE30A002C80BF /* QuotesRouter.swift */; };
+		3E49EFFC260CE381002C80BF /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFFB260CE381002C80BF /* QuotesViewController.swift */; };
+		3E49EFFF260CE53D002C80BF /* QuotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49EFFE260CE53D002C80BF /* QuotesInteractor.swift */; };
+		3E49F008260D9DC0002C80BF /* QuoteDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49F007260D9DC0002C80BF /* QuoteDetailContract.swift */; };
+		3E49F00B260DA49D002C80BF /* QuoteDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49F00A260DA49D002C80BF /* QuoteDetailInteractor.swift */; };
+		3E49F00E260DA5FD002C80BF /* QuoteDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49F00D260DA5FD002C80BF /* QuoteDetailPresenter.swift */; };
+		3E49F011260DA6D7002C80BF /* QuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49F010260DA6D7002C80BF /* QuoteDetailViewController.swift */; };
+		3E49F014260DA7EB002C80BF /* QuoteDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49F013260DA7EB002C80BF /* QuoteDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +36,26 @@
 		3E49EFAA260C7C27002C80BF /* Viper-Simple-DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper-Simple-DemoApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E49EFAD260C7C27002C80BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E49EFAF260C7C27002C80BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E49EFB1260C7C27002C80BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3E49EFB4260C7C27002C80BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E49EFB6260C7C30002C80BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E49EFB9260C7C30002C80BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E49EFBB260C7C30002C80BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E49EFD0260CA8B5002C80BF /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		3E49EFD5260CADEC002C80BF /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		3E49EFDB260CAFF6002C80BF /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		3E49EFDF260CB04A002C80BF /* APIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManger.swift; sourceTree = "<group>"; };
+		3E49EFE3260CB0C8002C80BF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3E49EFEC260CB587002C80BF /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		3E49EFEF260CDD29002C80BF /* ImageDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataService.swift; sourceTree = "<group>"; };
+		3E49EFF2260CDDFD002C80BF /* KingFisherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingFisherService.swift; sourceTree = "<group>"; };
+		3E49EFF5260CDFE0002C80BF /* QuotesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesPresenter.swift; sourceTree = "<group>"; };
+		3E49EFF8260CE30A002C80BF /* QuotesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesRouter.swift; sourceTree = "<group>"; };
+		3E49EFFB260CE381002C80BF /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		3E49EFFE260CE53D002C80BF /* QuotesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesInteractor.swift; sourceTree = "<group>"; };
+		3E49F007260D9DC0002C80BF /* QuoteDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailContract.swift; sourceTree = "<group>"; };
+		3E49F00A260DA49D002C80BF /* QuoteDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailInteractor.swift; sourceTree = "<group>"; };
+		3E49F00D260DA5FD002C80BF /* QuoteDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailPresenter.swift; sourceTree = "<group>"; };
+		3E49F010260DA6D7002C80BF /* QuoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewController.swift; sourceTree = "<group>"; };
+		3E49F013260DA7EB002C80BF /* QuoteDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailRouter.swift; sourceTree = "<group>"; };
 		4C8E42E46E080DE841148A2B /* Pods-Viper-Simple-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-Simple-DemoApp.release.xcconfig"; path = "Target Support Files/Pods-Viper-Simple-DemoApp/Pods-Viper-Simple-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		6EA51CAC8D4B476E553EEB7F /* Pods-Viper-Simple-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-Simple-DemoApp.debug.xcconfig"; path = "Target Support Files/Pods-Viper-Simple-DemoApp/Pods-Viper-Simple-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,15 +93,102 @@
 		3E49EFAC260C7C27002C80BF /* Viper-Simple-DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				3E49EFEA260CB54F002C80BF /* Services */,
+				3E49EFDE260CB035002C80BF /* Managers */,
+				3E49EFD8260CAFB9002C80BF /* Common */,
+				3E49EFCF260CA895002C80BF /* Module */,
+				3E49EFCB260CA7D7002C80BF /* SupportingFiles */,
+			);
+			path = "Viper-Simple-DemoApp";
+			sourceTree = "<group>";
+		};
+		3E49EFCB260CA7D7002C80BF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				3E49EFAD260C7C27002C80BF /* AppDelegate.swift */,
 				3E49EFAF260C7C27002C80BF /* SceneDelegate.swift */,
-				3E49EFB1260C7C27002C80BF /* ViewController.swift */,
-				3E49EFB3260C7C27002C80BF /* Main.storyboard */,
 				3E49EFB6260C7C30002C80BF /* Assets.xcassets */,
 				3E49EFB8260C7C30002C80BF /* LaunchScreen.storyboard */,
 				3E49EFBB260C7C30002C80BF /* Info.plist */,
 			);
-			path = "Viper-Simple-DemoApp";
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3E49EFCF260CA895002C80BF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3E49F005260CEFF7002C80BF /* QuotesDetails */,
+				3E49F003260CEFA0002C80BF /* Quotes */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		3E49EFD4260CADD1002C80BF /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				3E49EFD5260CADEC002C80BF /* Quote.swift */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+		3E49EFD8260CAFB9002C80BF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3E49EFDA260CAFCE002C80BF /* EndPoints */,
+				3E49EFD4260CADD1002C80BF /* Entites */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3E49EFDA260CAFCE002C80BF /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				3E49EFDB260CAFF6002C80BF /* EndPoints.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		3E49EFDE260CB035002C80BF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3E49EFDF260CB04A002C80BF /* APIManger.swift */,
+				3E49EFE3260CB0C8002C80BF /* APIClient.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3E49EFEA260CB54F002C80BF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3E49EFEC260CB587002C80BF /* QuoteService.swift */,
+				3E49EFEF260CDD29002C80BF /* ImageDataService.swift */,
+				3E49EFF2260CDDFD002C80BF /* KingFisherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3E49F003260CEFA0002C80BF /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				3E49EFD0260CA8B5002C80BF /* Quotes.swift */,
+				3E49EFF5260CDFE0002C80BF /* QuotesPresenter.swift */,
+				3E49EFF8260CE30A002C80BF /* QuotesRouter.swift */,
+				3E49EFFB260CE381002C80BF /* QuotesViewController.swift */,
+				3E49EFFE260CE53D002C80BF /* QuotesInteractor.swift */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+		3E49F005260CEFF7002C80BF /* QuotesDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3E49F007260D9DC0002C80BF /* QuoteDetailContract.swift */,
+				3E49F00A260DA49D002C80BF /* QuoteDetailInteractor.swift */,
+				3E49F00D260DA5FD002C80BF /* QuoteDetailPresenter.swift */,
+				3E49F010260DA6D7002C80BF /* QuoteDetailViewController.swift */,
+				3E49F013260DA7EB002C80BF /* QuoteDetailRouter.swift */,
+			);
+			path = QuotesDetails;
 			sourceTree = "<group>";
 		};
 		9AC9A6B59DFD96D283DDAA68 /* Frameworks */ = {
@@ -88,7 +205,6 @@
 				6EA51CAC8D4B476E553EEB7F /* Pods-Viper-Simple-DemoApp.debug.xcconfig */,
 				4C8E42E46E080DE841148A2B /* Pods-Viper-Simple-DemoApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,7 +269,6 @@
 			files = (
 				3E49EFBA260C7C30002C80BF /* LaunchScreen.storyboard in Resources */,
 				3E49EFB7260C7C30002C80BF /* Assets.xcassets in Resources */,
-				3E49EFB5260C7C27002C80BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,23 +321,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E49EFB2260C7C27002C80BF /* ViewController.swift in Sources */,
+				3E49EFF9260CE30A002C80BF /* QuotesRouter.swift in Sources */,
+				3E49F00B260DA49D002C80BF /* QuoteDetailInteractor.swift in Sources */,
+				3E49EFFF260CE53D002C80BF /* QuotesInteractor.swift in Sources */,
+				3E49F011260DA6D7002C80BF /* QuoteDetailViewController.swift in Sources */,
+				3E49EFD1260CA8B5002C80BF /* Quotes.swift in Sources */,
+				3E49F008260D9DC0002C80BF /* QuoteDetailContract.swift in Sources */,
+				3E49EFF0260CDD29002C80BF /* ImageDataService.swift in Sources */,
+				3E49EFED260CB587002C80BF /* QuoteService.swift in Sources */,
+				3E49F014260DA7EB002C80BF /* QuoteDetailRouter.swift in Sources */,
 				3E49EFAE260C7C27002C80BF /* AppDelegate.swift in Sources */,
+				3E49EFE4260CB0C8002C80BF /* APIClient.swift in Sources */,
+				3E49EFD6260CADEC002C80BF /* Quote.swift in Sources */,
+				3E49EFE0260CB04A002C80BF /* APIManger.swift in Sources */,
+				3E49F00E260DA5FD002C80BF /* QuoteDetailPresenter.swift in Sources */,
+				3E49EFDC260CAFF6002C80BF /* EndPoints.swift in Sources */,
+				3E49EFF6260CDFE0002C80BF /* QuotesPresenter.swift in Sources */,
+				3E49EFF3260CDDFD002C80BF /* KingFisherService.swift in Sources */,
 				3E49EFB0260C7C27002C80BF /* SceneDelegate.swift in Sources */,
+				3E49EFFC260CE381002C80BF /* QuotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3E49EFB3260C7C27002C80BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E49EFB4260C7C27002C80BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3E49EFB8260C7C30002C80BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -357,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Viper-Simple-DemoApp/Info.plist";
+				INFOPLIST_FILE = "Viper-Simple-DemoApp/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,7 +499,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Viper-Simple-DemoApp/Info.plist";
+				INFOPLIST_FILE = "Viper-Simple-DemoApp/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
